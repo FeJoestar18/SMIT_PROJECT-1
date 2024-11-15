@@ -33,6 +33,6 @@ class UserController extends Controller
         ]);
 
         // Redireciona de volta para a página 'hello' com uma mensagem de sucesso
-        return redirect('/hello')->with('success', 'Usuário criado com sucesso!');
+        return redirect('/pagina-Home')->with('success', 'Usuário criado com sucesso!');
     }
 }

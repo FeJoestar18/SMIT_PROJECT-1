@@ -14,7 +14,7 @@
     @endif
 
     <!-- Formulário de cadastro -->
-    <form action="/hello" method="post">
+    <form action="/Cadastro" method="post">
         @csrf
         <input type="text" name="name" placeholder="Nome" required><br>
         <input type="email" name="email" placeholder="Email" required><br>
@@ -22,7 +22,7 @@
         <input type="text" name="cpf" placeholder="CPF" required><br>
         <input type="text" name="telefone" placeholder="Telefone"><br>
         <input type="text" name="endereco" placeholder="Endereço"><br>
-        <button type="submit">Cadastrar</button>
+        <button type="submit">Cadastrar Usuário</button>
     </form>
 </body>
 </html>
