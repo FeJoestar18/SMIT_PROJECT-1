@@ -1,12 +1,11 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
-
-Route::get('/', function () {
-    return view('Welcome');
+// Rota para exibir o formulário
+Route::get('/hello', function () {
+    return view('hello');  // O arquivo de view pode ser 'resources/views/hello.blade.php'
 });
 
-Route::get('/Hello World', function () {
-    return view('Hello_World');
-});
+// Rota para processar os dados do formulário
+Route::post('/hello', [UserController::class, 'store']);
